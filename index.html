@@ -71,9 +71,12 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide"><img src="img/Nodejs.svg" alt="Livro da Alura" /></div>
+    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro da Alura"/></div>
+    <div class="swiper-slide"><img src="img/Javascript.svg"alt="Livro da Alura" /></div>
+    <div class="swiper-slide"><img src="img/MetricasAgeis.svg"alt="Livro da Alura"/></div>
+    <div class="swiper-slide"><img src="img/UX.svg"alt="Livro da Alura" /></div>
+    <div class="swiper-slide"><img src="img/Gestão2.svg"alt="Livro da Alura" /></div>
     ...
   </div>
   <!-- If we need pagination -->
@@ -83,18 +86,22 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
+  
 </div>
-<div class="swiper-slide"><img src="img/Nodejs.svg" /></div>
-<div class="swiper-slide"><img src="img/Liderança.svg" /></div>
-<div class="swiper-slide"><img src="img/Javascript.svg" /></div>
-<div class="swiper-slide"><img src="img/MetricasAgeis.svg" /></div>
-<div class="swiper-slide"><img src="img/UX.svg" /></div>
-<div class="swiper-slide"><img src="img/Gestão2.svg" /></div>
+
 </section>
 
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+  });
+</script>
+
     </body>
 </html>
